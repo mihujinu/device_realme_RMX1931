@@ -4,6 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from RMX1931 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
